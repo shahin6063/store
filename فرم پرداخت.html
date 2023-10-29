@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>فرم پرداخت</title>
+</head>
+<body>
+
+ <h1>فرم پرداخت</h1>
+
+ <form action="https://example.com/payment" method="post">
+  <label for="name">نام و نام خانوادگی:</label><br>
+  <input type="text" id="name" name="name"><br>
+
+  <label for="email">ایمیل:</label><br>
+  <input type="email" id="email" name="email"><br>
+
+  <label for="phone">تلفن:</label><br>
+  <input type="tel" id="phone" name="phone"><br>
+
+  <label for="card_number">شماره کارت:</label><br>
+  <input type="text" id="card_number" name="card_number"><br>
+
+        <label for="expiry_date">تاریخ انقضا:</label><br>
+        <input type=”month” id=”expiry_date” name=”expiry_date”><br>
+
+        <label for=”cvv”>CVV:</label><br>
+        <input type=”password” id=”cvv” name=”cvv” maxlength=3><br>
+
+        <label for=”amount”>مبلغ پرداختی:</label><br>
+        <input type=”number” id=”amount” name=”amount” min=0 step=1000 required><br>
+
+        <button type=”submit”>پرداخت</button>
+    </form>
+
+</body>
+</html>
